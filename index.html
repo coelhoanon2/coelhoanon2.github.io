@@ -17,31 +17,54 @@
         #nome, a{/* 
             text-decoration: none; */
             color: inherit;
+            text-align: center;
         }
 
         #habilidades{
             font-size: 20px;
+        }
+
+        #personal-box{
+            position: relative;
+            border: 2px solid black;
+        }
+
+        #foto_container{
+            padding: 1px;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+        #descricao{
+            position: absolute;
+            left: 40%;
+            padding: 10px;
+        }
+
+        #thiago{
+            float: left;
+            height: 100%;
+            border: 2px solid green;
         }
     </style>
 </head>
 <body>
     <!-- 
 
-    Seu nome completo;
+ Seu Portfólio Web deve ter um layout usando Box Model com as informações a seguir:
 
-    Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando;
+    Coloque seu nome, sua foto e a descrição que você escreveu sobre você dentro de blocos;
 
-    Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
+    A descrição deve ficar ao lado da foto;
 
-    Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha;
+    Centralize seu nome na página;
 
-    Um link interno para a sua foto;
+    Use padding e coloque uma cor de fundo na sua foto que seja diferente da cor de fundo do resto da página;
 
-    Um link externo para algum blog de que você goste, que abra em uma nova aba;
+    Adicione margin e padding nos elementos que julgar necessário;
 
-    Partes do seu portfólio destacadas com negrito e/ou itálico;
+    Coloque estilo somente nos itens ímpares da lista das suas habilidades.
 
-    Um índice com links internos para as diferentes seções do seu portfólio.
 
      -->
      <strong>
@@ -73,11 +96,16 @@
          </ol>
      </strong>
 
-     <h1 id="nome"><a href="#thiago"> Thiago Silva da Costa </a></h1>
+    <div id="personal-box">
+        <h1 id="nome"><a href="#thiago"> Thiago Silva da Costa </a></h1>
 
-     <img src="images/minecraft.jpeg" alt="um rapaz deveras elegante em um cenário do jogo minecraft e vestindo um agasalho da organização akatsuki" width="500px" id="thiago">
-     <br>
-     <i id="descricao">Aptdão para <strong> lógica </strong> desde criança quando ainda jogava damas, que atualmente migrou para o <strong> xadrez </strong> e vive no mundo da <strong> programação </strong>, aqui mesmo do Brasil, residente em Mato Grosso do Sul na cidade de Guia Lopes da Laguna</i>
+        <div id="foto_container">
+            <img src="images/minecraft.jpeg" alt="um rapaz deveras elegante em um cenário do jogo minecraft e vestindo um agasalho da organização akatsuki" width="500px" id="thiago">
+        <span>
+            <i id="descricao">Aptdão para <strong> lógica </strong> desde criança quando ainda jogava damas, que atualmente migrou para o <strong> xadrez </strong> e vive no mundo da <strong> programação </strong>, aqui mesmo do Brasil, residente em Mato Grosso do Sul na cidade de Guia Lopes da Laguna</i>
+        </span>
+        </div>
+    </div>
 
      <ul id="habilidades">
          <li><strong> Xadrez </strong></li>
